@@ -24,7 +24,7 @@ class Plugin:
     
     def weather(self, location):
         if not location:
-            return "format /weather kannur"
+            return "format /weather kolkata"
         try: 
             api_url = f"https://api.openweathermap.org/data/2.5/weather?q={location.strip()}&units=metric&appid=1d74f5174b5bce8e43c9ac159905c7f6"
             r = requests.get(api_url).json()

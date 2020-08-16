@@ -9,7 +9,7 @@ def command_handler():
     incoming = data['query']['message']
     cmd,msg = msghandler(incoming)
     if cmd == "/start":
-        return send_message(f"Im alive 😏\n_Powered by : auto responder plugin by W4RR10R_")
+        return send_message(f"Im alive 😏\n_Powered by : auto responder plugin by NIKITA_")
     if cmd == "/help":
         return send_message(plugin.help())
     elif cmd == "/tr":
@@ -36,4 +36,4 @@ def method_not_allowed(e):
     return render_template("forbidden.html")
     
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=5000)
